@@ -61,7 +61,7 @@ class UserLoginPage extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 16.0),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                      backgroundColor: Colors.deepPurple,
+                      backgroundColor: Colors.amber,
                       foregroundColor: Colors.white,
                     ),
                     child: const Text('Entrar', style: TextStyle(fontSize: 18)),

@@ -11,18 +11,18 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  @override
+ @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Login App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: Colors.blueGrey,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
+          seedColor: Colors.amber,
           brightness: Brightness.dark,
         ),
+        // La línea que estaba aquí ha sido eliminada
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12.0),
@@ -98,7 +98,7 @@ class LoginPage extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      backgroundColor: Colors.deepPurple,
+                      backgroundColor: Colors.amber,
                       foregroundColor: Colors.white,
                     ),
                     child: const Text(
