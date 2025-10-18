@@ -5,6 +5,7 @@ import 'package:myapp/entrenamiento_page.dart';
 import 'package:myapp/profile_page.dart';
 import 'package:myapp/shop_page.dart'; // <--- IMPORTA LA NUEVA PÁGINA
 import 'package:myapp/services_page.dart'; 
+import 'package:myapp/find_exercise_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -62,6 +63,14 @@ class HomePage extends StatelessWidget {
                     icon: Icons.people_alt_outlined, // Ícono de servicios/personas
                     title: 'Servicios',
                     page: const ServicesPage(), // Navega a ServicesPage
+                  ),
+                  // *************************************
+                                     // ***** AÑADE ESTE NUEVO MÓDULO *****
+                  _buildModuleCard(
+                    context: context,
+                    icon: Icons.qr_code_scanner, // Ícono de QR
+                    title: 'Buscar Ejercicio', // Título más corto
+                    page: const FindExercisePage(), // Navega a FindExercisePage
                   ),
                   // *************************************
                   _buildModuleCard(
