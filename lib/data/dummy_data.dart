@@ -25,7 +25,7 @@ final List<Exercise> allExercises = [
     id: 'ex02',
     name: 'Aperturas con Mancuernas',
     description: 'Este ejercicio aísla los músculos del pecho, ayudando a mejorar la amplitud y definición.',
-    videoUrl: 'YQ2s_Y7g5Qk', // ID de YouTube
+    videoUrl: 'lMcLXbjrbQ4', // ID de YouTube
     steps: [
       'Acuéstate en un banco plano con una mancuerna en cada mano.',
       'Extiende los brazos por encima de tu pecho.',
@@ -39,7 +39,7 @@ final List<Exercise> allExercises = [
     id: 'ex03',
     name: 'Sentadillas con Barra',
     description: 'La sentadilla es el rey de los ejercicios de piernas, trabajando cuádriceps, glúteos e isquiotibiales.',
-    videoUrl: 'YQ2s_Y7g5Qk', // ID de YouTube
+    videoUrl: 'dsCuiccYNGs', // ID de YouTube
     steps: [
       'Coloca la barra sobre tus trapecios.',
       'Mantén la espalda recta y el pecho hacia arriba.',
@@ -51,7 +51,7 @@ final List<Exercise> allExercises = [
     id: 'ex04',
     name: 'Prensa de Piernas',
     description: 'Una excelente alternativa a las sentadillas para enfocar el trabajo en los cuádriceps de forma segura.',
-    videoUrl: 'YQ2s_Y7g5Qk', // ID de YouTube
+    videoUrl: 'wpHk7S4eF5I', // ID de YouTube
     steps: [
       'Siéntate en la máquina y coloca los pies en la plataforma.',
       'Empuja la plataforma hasta que tus piernas estén extendidas.',
@@ -65,7 +65,7 @@ final List<Exercise> allExercises = [
     id: 'ex05',
     name: 'Dominadas',
     description: 'Ejercicio de peso corporal ideal para desarrollar la amplitud de la espalda (dorsales).',
-    videoUrl: 'YQ2s_Y7g5Qk', // ID de YouTube
+    videoUrl: 'lgE47t3dr2Q', // ID de YouTube
     steps: [
       'Sujeta la barra con las palmas hacia afuera.',
       'Cuélgate con los brazos completamente extendidos.',
@@ -77,7 +77,7 @@ final List<Exercise> allExercises = [
     id: 'ex06',
     name: 'Remo con Barra',
     description: 'Un ejercicio fundamental para dar densidad y grosor a los músculos de la espalda media.',
-    videoUrl: 'YQ2s_Y7g5Qk', // ID de YouTube
+    videoUrl: 'OXH-ecu-Obw', // ID de YouTube
     steps: [
       'Inclina tu torso hacia adelante manteniendo la espalda recta.',
       'Sujeta la barra con un agarre prono.',
