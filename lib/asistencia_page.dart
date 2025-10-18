@@ -16,12 +16,12 @@ class AsistenciaPage extends StatelessWidget {
 
     return Scaffold(
       // Barra superior con un estilo limpio
-      appBar: AppBar(
-        title: const Text('Acceso al Gimnasio'),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
+      // appBar: AppBar(
+        // title: const Text('Acceso al Gimnasio'),
+        // backgroundColor: Colors.transparent,
+        //elevation: 0,
         // Botón de regreso que ya viene por defecto
-      ),
+      // ),
       body: Center(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(24.0),

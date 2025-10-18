@@ -1,12 +1,19 @@
 // lib/main.dart
-
 import 'package:flutter/material.dart';
-// Importa el nuevo archivo que creaste
+import 'package:provider/provider.dart'; // Importa provider
+import 'package:myapp/cart_provider.dart'; // Importa el CartProvider
 import 'package:myapp/user_login_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    // Envuelve tu app con ChangeNotifierProvider
+    ChangeNotifierProvider(
+      create: (context) => CartProvider(), // Crea la instancia del CartProvider
+      child: const MyApp(),
+    ),
+  );
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

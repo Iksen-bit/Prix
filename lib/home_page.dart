@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/asistencia_page.dart';
 import 'package:myapp/entrenamiento_page.dart';
 import 'package:myapp/profile_page.dart';
+import 'package:myapp/shop_page.dart'; // <--- IMPORTA LA NUEVA PÁGINA
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Inicio'),
         backgroundColor: Colors.grey[900],
-        automaticallyImplyLeading: false, // Oculta el botón de regreso
+        automaticallyImplyLeading: false,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -21,7 +22,7 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Bienvenido, Usuario', // Puedes cambiar esto por el nombre del usuario
+              'Bienvenido, Usuario',
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
@@ -30,7 +31,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 24),
             Expanded(
               child: GridView.count(
-                crossAxisCount: 2, // 2 módulos por fila
+                crossAxisCount: 2,
                 crossAxisSpacing: 16,
                 mainAxisSpacing: 16,
                 children: [
@@ -46,6 +47,14 @@ class HomePage extends StatelessWidget {
                     title: 'Entrenamiento',
                     page: const EntrenamientoPage(),
                   ),
+                   // ***** AÑADE ESTE NUEVO MÓDULO *****
+                  _buildModuleCard(
+                    context: context,
+                    icon: Icons.storefront, // Ícono de tienda
+                    title: 'Tienda',
+                    page: const ShopPage(), // Navega a ShopPage
+                  ),
+                  // *************************************
                   _buildModuleCard(
                     context: context,
                     icon: Icons.person_outline,
@@ -61,14 +70,15 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // Widget reutilizable para crear las tarjetas de los módulos
+  // Widget reutilizable (sin cambios aquí)
   Widget _buildModuleCard({
     required BuildContext context,
     required IconData icon,
     required String title,
     required Widget page,
   }) {
-    return Card(
+    // ... (este código sigue igual)
+        return Card(
       elevation: 4,
       color: Colors.grey[800],
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
