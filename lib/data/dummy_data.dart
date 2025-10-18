@@ -4,6 +4,7 @@
 import 'package:myapp/models/exercise_model.dart';
 import 'package:myapp/models/routine_model.dart';
 import 'package:myapp/models/product_model.dart'; // <--- Importa el nuevo modelo de producto
+import 'package:myapp/models/professional_model.dart';
 
 // --- Lista de Todos los Ejercicios Disponibles ---
 final List<Exercise> allExercises = [
@@ -200,5 +201,99 @@ final List<Product> allProducts = [
       'Porción': '1 scoop (5.0g)',
     },
   ),
-  // Puedes añadir más productos aquí si lo deseas
+//Puedes añadir más productos aquí si lo deseas
 ];
+
+// --- Profesionales Disponibles ---
+  final List<Professional> allProfessionals = [
+  // Coaches
+  Professional(
+    id: 'prof01',
+    name: 'Carlos Mendez',
+    category: ServiceCategory.coach,
+    description: 'Entrenador personal certificado con 10 años de experiencia en transformación física.',
+    focusArea: 'Hipertrofia y pérdida de grasa',
+    availability: 'Lunes a Viernes: 7am - 12pm / 4pm - 8pm',
+    imageUrl: 'https://via.placeholder.com/150/FF5733/FFFFFF?text=CM', // Placeholder
+    availableSlots: {
+      1: ['07:00', '08:00', '09:00', '10:00', '11:00', '16:00', '17:00', '18:00', '19:00'], // Lunes
+      2: ['07:00', '08:00', '09:00', '10:00', '11:00', '16:00', '17:00', '18:00', '19:00'], // Martes
+      3: ['07:00', '08:00', '09:00', '10:00', '11:00', '16:00', '17:00', '18:00', '19:00'], // Miércoles
+      4: ['07:00', '08:00', '09:00', '10:00', '11:00', '16:00', '17:00', '18:00', '19:00'], // Jueves
+      5: ['07:00', '08:00', '09:00', '10:00', '11:00'], // Viernes
+    },
+  ),
+  Professional(
+    id: 'prof02',
+    name: 'Sofia Reyes',
+    category: ServiceCategory.coach,
+    description: 'Especialista en entrenamiento funcional y preparación para competencias fitness.',
+    focusArea: 'Rendimiento deportivo y funcional',
+    availability: 'Martes a Sábado: 9am - 2pm / 5pm - 7pm',
+    imageUrl: 'https://via.placeholder.com/150/33FF57/FFFFFF?text=SR', // Placeholder
+    availableSlots: {
+      2: ['09:00', '10:00', '11:00', '12:00', '13:00', '17:00', '18:00'],
+      3: ['09:00', '10:00', '11:00', '12:00', '13:00', '17:00', '18:00'],
+      4: ['09:00', '10:00', '11:00', '12:00', '13:00', '17:00', '18:00'],
+      5: ['09:00', '10:00', '11:00', '12:00', '13:00', '17:00', '18:00'],
+      6: ['10:00', '11:00', '12:00'],
+    },
+  ),
+  // Nutriólogos
+  Professional(
+    id: 'prof03',
+    name: 'Dr. Alberto Pérez',
+    category: ServiceCategory.nutriologo,
+    description: 'Nutriólogo clínico enfocado en planes alimenticios personalizados para objetivos específicos.',
+    focusArea: 'Nutrición deportiva y control de peso',
+    availability: 'Lunes, Miércoles, Viernes: 10am - 6pm',
+    imageUrl: 'https://via.placeholder.com/150/3357FF/FFFFFF?text=AP', // Placeholder
+    availableSlots: {
+      1: ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+      3: ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+      5: ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+    },
+  ),
+   Professional(
+    id: 'prof04',
+    name: 'Lic. Laura García',
+    category: ServiceCategory.nutriologo,
+    description: 'Asesora en nutrición holística y alimentación consciente.',
+    focusArea: 'Bienestar general y dietas especiales',
+    availability: 'Martes y Jueves: 8am - 3pm',
+    imageUrl: 'https://via.placeholder.com/150/FF33A1/FFFFFF?text=LG', // Placeholder
+    availableSlots: {
+      2: ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00'],
+      4: ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00'],
+    },
+  ),
+  // Masaje Deportivo
+  Professional(
+    id: 'prof05',
+    name: 'Ricardo Torres',
+    category: ServiceCategory.masaje,
+    description: 'Terapeuta físico con especialización en masaje de tejido profundo y liberación miofascial.',
+    focusArea: 'Recuperación muscular y prevención de lesiones',
+    availability: 'Lunes a Jueves: 2pm - 9pm',
+    imageUrl: 'https://via.placeholder.com/150/F1C40F/FFFFFF?text=RT', // Placeholder
+    availableSlots: {
+       1: ['14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'],
+       2: ['14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'],
+       3: ['14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'],
+       4: ['14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'],
+    },
+  ),
+   Professional(
+    id: 'prof06',
+    name: 'Elena Castillo',
+    category: ServiceCategory.masaje,
+    description: 'Especialista en masaje deportivo pre y post competencia, y técnicas de relajación.',
+    focusArea: 'Optimización del rendimiento y relajación',
+    availability: 'Viernes y Sábado: 11am - 7pm',
+    imageUrl: 'https://via.placeholder.com/150/9B59B6/FFFFFF?text=EC', // Placeholder
+    availableSlots: {
+      5: ['11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00'],
+      6: ['11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00'],
+    },
+  ),
+];//d

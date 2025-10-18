@@ -3,17 +3,22 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart'; // Importa provider
 import 'package:myapp/cart_provider.dart'; // Importa el CartProvider
 import 'package:myapp/user_login_page.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
-void main() {
+//                       vvvvv--- 2. HAZ QUE MAIN SEA ASYNC
+void main() async {
+  // Asegúrate de que Flutter esté listo antes de inicializar
+  WidgetsFlutterBinding.ensureInitialized();
+  //             vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv--- 3. LLAMA A LA INICIALIZACIÓN
+  await initializeDateFormatting('es_ES', null); // Inicializa para español
+
   runApp(
-    // Envuelve tu app con ChangeNotifierProvider
     ChangeNotifierProvider(
-      create: (context) => CartProvider(), // Crea la instancia del CartProvider
+      create: (context) => CartProvider(),
       child: const MyApp(),
     ),
   );
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
